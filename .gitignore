@@ -1,0 +1,42 @@
+build/
+bin/
+dist/
+
+*.launch
+
+.gradle
+
+# LaTeX outputs
+*.log
+*.aux
+*.bbl
+*.blg
+*.pdf
+*.synctex.gz
+*.toc
+
+# Java outputs
+*.class
+
+# Allow PDF images in docs
+!/docs/*/images/*.pdf
+!/docs/*/images/*/*.pdf
+
+# Horrible OSX stuff
+.DS_STORE
+.DS_Store
+*(busy)
+
+# gedit copies/backups
+*~
+
+AdminCentre/.idea/
+AdminCentre/modern-business/modern-business.iml
+AdminCentre/modern-business/nbproject/private/
+AdminCentre/web/web.iml
+
+.metadata
+gen
+Thumbs.db
+
+projects/GPIG-WebApp/test-classes/com/gpigc/blank.properties

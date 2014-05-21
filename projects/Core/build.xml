@@ -1,0 +1,20 @@
+<project name="GPIG-C Core" basedir="." default="rebuild-run">
+	<property name="project.main-class" value="com.gpigc.core.Main" />
+	<property name="project.common.libs" value="Proto.jar,protobuf.jar" />
+	<property name="project.nested-libs" value="jetty/**,neo4j/**" />
+
+	<import file="../../tools/common-ant.xml" />
+
+	<target name="prehook">
+		<copy todir="${bin.res.dir}/server">
+			<fileset dir="${gpigc.projects.dir}/AdminCentre" includes="**" />
+		</copy>
+	</target>
+	
+	<target name="prejar-hook" depends="compile">
+	    <mkdir dir="${bin.res.dir}/config/engines" />
+		<copy todir="${bin.res.dir}/config/engines">
+   			<fileset dir="${bin.classes.dir}" includes="com/gpigc/core/*/engine/*.class"/>
+ 		</copy>
+	</target>
+</project>

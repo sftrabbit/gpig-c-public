@@ -1,0 +1,178 @@
+/* 
+    Document   : admin
+    Created on : 04-Dec-2013, 18:39:51
+    Author     : anthony
+    Description:
+        Admin Center CSS
+*/
+
+.btn-adminsplash, .btn-adminsplashmini {
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    text-align: left;
+}
+
+.btn-adminsplash {
+    width: 360px ;
+    height: 110px ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.btn-adminsplashmini {
+    width: 350px;
+    height: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.fa-adminsplash, .fa-adminsplashmini {
+    margin-right: 16px;
+}
+
+.btn-status {
+    width: 100px;
+}
+
+.rule-keyword{
+    color: #53777a;
+}
+
+.rule-non-keyword{
+    font-weight: bold;
+    color: #d94f36;
+}
+
+.notification-high-priority{
+    color: #d94f36;
+}
+
+.notification-mid-priority{
+    color: #53777a;
+}
+
+.notification-low-priority{
+    color: #36b0c9;
+}
+
+#tab-menu .fa
+{
+    margin-right: 3px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#systems-list
+{
+    float: right;
+}
+
+#systems-list > span
+{
+    font-size: 25px;
+}
+
+#systems-list .dropdown-menu
+{
+    float: right;
+    right: 0;
+    left: auto;
+}
+
+.param-item-deleted
+{
+    display: none;
+}
+
+.sensor-params input[type=text]
+{
+    display: inline-block;
+    width: calc(50% - 4px - 19px);
+    margin-right: 4px;
+}
+
+.param-delete
+{
+    width: 38px;
+}
+
+.new-param
+{
+    display: block;
+    margin: -10px -15px;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.new-param,
+.new-param:hover
+{
+    text-decoration: none;
+}
+
+.new-param:before
+{
+    content: '\002B';
+    display: inline-block;
+    margin: 0 6px 0 2px;
+}
+
+.new-param:hover span
+{
+    text-decoration: underline;
+}
+
+.buttons-group
+{
+    width: 99.5%;
+    text-align: center;
+}
+
+.buttons-group .btn
+{
+    min-width: 15%;
+    margin: 0 2px;
+}
+
+#data-store select
+{
+    width: calc(100% - 10px - 100px);
+    margin-right: 10px;
+}
+
+#data-store button
+{
+    width: 100px;
+}
+
+#content-engines .list-group
+{
+    margin-bottom: 0;
+}
+
+#content-engines .list-group-item
+{
+    overflow: auto;
+    line-height: 30px;
+}
+
+.bootstrap-switch
+{
+    float: right;
+}
+
+.btn-primary
+{
+    transition-property: background-color, border-color, color;
+    transition-duration: 0.5s;
+}
+
+.btn-success,
+.btn-warning
+{
+    transition-duration: 0s;
+}
